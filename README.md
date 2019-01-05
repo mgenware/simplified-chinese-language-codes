@@ -1,6 +1,6 @@
 # simplified-chinese-language-codes
 
-Returns an ES6 set of Simplified Chinese language codes
+Returns an ES6 set of Simplified Chinese language codes (**lowercased**)
 
 ## Installation
 ```sh
