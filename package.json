@@ -1,0 +1,46 @@
+{
+  "name": "simplified-chinese-language-codes",
+  "version": "0.0.0",
+  "description": "Returns an ES6 set of Simplified Chinese language codes",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "author": "Mgen (https://www.mgenware.com)",
+  "homepage": "https://github.com/mgenware/simplified-chinese-language-codes",
+  "bugs": "https://github.com/mgenware/simplified-chinese-language-codes/issues",
+  "keywords": [
+    "languages",
+    "localization",
+    "i18n",
+    "language code"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgenware/simplified-chinese-language-codes.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn run clean && yarn run compile && yarn run lint && yarn run t",
+    "t": "jest",
+    "build": "yarn test",
+    "compile": "tsc -b tests",
+    "dev": "yarn run clean && tsc -b tests -w",
+    "prepublishOnly": "yarn run test",
+    "lint": "tslint --project tsconfig.json --config tslint.json",
+    "clean": "rimraf dist && rimraf dist_tests"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.11",
+    "@types/node": "^10.12.18",
+    "jest": "^23.6.0",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  }
+}
