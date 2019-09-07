@@ -1,8 +1,10 @@
 import scSet from '../';
+import * as assert from 'assert';
 
-test('Main', () => {
-  expect(scSet).toBeInstanceOf(Set);
-  expect(scSet).toEqual(
+it('Main', () => {
+  assert.ok(scSet instanceof Set);
+  assert.deepEqual(
+    scSet,
     new Set([
       'zh-cn', // Simplified Chinese (PRC)
       'zh-sg', // Simplified Chinese (Singapore)
