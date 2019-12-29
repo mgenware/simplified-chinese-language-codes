@@ -1,6 +1,6 @@
 {
   "name": "simplified-chinese-language-codes",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Returns an ES6 set of Simplified Chinese language codes",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
